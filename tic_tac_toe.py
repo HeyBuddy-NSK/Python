@@ -28,7 +28,10 @@ def enter_move():
     # The function accepts the board current status, asks the user about their move, 
     # checks the input and updates the board according to the user's decision.
     
-    while True:                
+    # using while loop for any matches
+    while True:               
+        
+        # code for computer and user moves
         free_fields = make_list_of_free_fields()
         computer_move = randrange(1,10)
         user_move = int(input("\nEnter your move :: "))
@@ -36,6 +39,8 @@ def enter_move():
         print("Computer Choice :: ",computer_move)
         print("Your choice :: ",user_move)
         print()
+        
+        # loggic for movers
         if computer_move == user_move:
             print("|Sorry, computer and you cannot choose same move|")
             continue

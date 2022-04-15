@@ -1,3 +1,5 @@
+
+# this functions converts liters per 100 kilometers to Gallon per per miles
 def liters_100km_to_miles_gallon(liters):
     onemile = 1609.344
     onegallon = 3.785411784
@@ -6,9 +8,16 @@ def liters_100km_to_miles_gallon(liters):
     result = rmiles/rgallon
     return result
 
+# this functions converts Gallon per per miles to liters per 100 kilometers 
 def miles_gallon_to_liters_100km(miles):
+    
+    # value of one gallon as liters
     onegallon = 3.785411784
+    
+    #value of one mile as kilometer
     onemile = 1609.344
+    
+    # converting given miles to kilometers
     rkm = miles*onemile
     rliters = onegallon
     result = (rliters/rkm)*100000
